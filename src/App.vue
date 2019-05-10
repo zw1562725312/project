@@ -8,7 +8,19 @@
   </div>
 </template>
 
+<script>
+export default {
+    beforeMount(){
+      console.log(this.$route);
+    },
+    updated(){
+      console.log(this.$route.name);
+    }
+}
+</script>
+
 <style lang="less">
+*{margin:0;padding:0;}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
